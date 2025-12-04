@@ -1,0 +1,68 @@
+.navbar {
+    display: flex;
+    padding: 0 20px;
+    height: 100px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    .sales-title {
+        font-size: 25px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        @media only screen and (max-width: 1300px){
+            font-size: 15px;
+            word-wrap: break-word;
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+    }
+    .search {
+        background: url('https://cdn-icons-png.flaticon.com/512/54/54481.png') no-repeat;
+        background-position: 220px;
+        background-size: 20px 20px;
+        width: 250px;
+        border-radius: 15px;
+        outline: none;
+        border: 1px solid gray;
+        padding: 8px 30px 8px 8px;
+        margin-right: 130px;
+        @media only screen and (max-width: 1300px){
+            background-position: 155px;
+             width: 180px;
+             background-size: 18px 18px;
+        }
+    }
+    .search-addnew {
+        display: flex;
+        align-items: center;
+        .add-box {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .icon {
+                border-radius: 50%;
+                border: 1px solid gray;
+                padding: 5px;
+            }
+            .add-new {
+                border: 1px solid gray;
+                display: flex;
+                align-items: center;
+                border-radius: 15px;
+                padding: 0;
+                p {
+                    margin: 8px 10px;
+                }
+                .icon-plus {
+                    background-color: black;
+                    color: white;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

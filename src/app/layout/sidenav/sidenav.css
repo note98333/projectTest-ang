@@ -1,0 +1,44 @@
+.sidebar {
+    height: 100vh;
+    width: 220px;
+    background-color: rgb(11, 68, 11);
+    color: white;
+    padding: 30px 30px 20px 30px;
+    .logo{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .menu a, .general a {
+        color: white;
+        display: flex;
+        padding: 10px 0;
+        margin-top: 10px;
+        align-items: center;
+        font-size: 18px;
+        gap: 12px;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+        background-color: green;
+    }
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: auto;
+        img {
+            width: 45px;
+            height: 45px;
+            background-color: greenyellow;
+            border-radius: 50%;
+            padding: 6px;
+        }
+        p {
+           margin: 5px 0px;
+        }
+    }
+   
+
+}
