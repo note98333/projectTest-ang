@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    .title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: blue;
+        padding-top: 20px;
+        .title {
+            font-size: 25px;
+            margin: 0;
+        }
+        .date {
+            border: 1px solid gray;
+            padding: 5px 10px;
+            border-radius: 15px;
+            .input-date {
+                background-color: white;
+                padding: 2px;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+    .top-widget {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        .widget {
+            background-color: red;
+            border: 1px solid gray;
+            border-radius: 20px;
+            padding: 15px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 33%;
+        }
+            .title-update {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                .dot-update {
+                    background-color: rgb(238, 106, 106);
+                    padding: 0;
+                    margin: 0;
+                    border-radius: 50%;
+                }
+            }
+            .see-statistics p {
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+            }
+            .titles {
+                display: flex;
+                justify-content: space-between;
+            }
+            .p-money {
+                font-size: 40px;
+            }
+
+    }
+}

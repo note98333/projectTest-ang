@@ -1,0 +1,30 @@
+.transaction-con {
+    background-color: rgb(141, 126, 98);
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    height: 100%;
+    .transaction-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .icon-tran {
+                background-color: white;
+                padding: 10px;
+                border-radius: 50%;
+            }
+        }
+        .status{
+             &.completed {
+                 color: #26c5da;
+                }
+            &.pending {
+            color: Black;
+            }
+        }
+    }
+}

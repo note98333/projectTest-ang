@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import {LucideAngularModule,Loader,LayoutGrid,ChartColumnStacked, BookUser,Package,Mail,Captions,Bolt,ShieldAlert } from 'lucide-angular';
 
 @Component({
   selector: 'app-sidenav',
-  imports: [LucideAngularModule],
+  imports: [LucideAngularModule, RouterOutlet, RouterLink],
   templateUrl: './sidenav.html',
   styleUrl: './sidenav.css',
 })

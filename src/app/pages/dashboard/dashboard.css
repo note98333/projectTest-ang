@@ -1,6 +1,18 @@
 .container-dashboard {
     display: flex;
-    gap: 10px;
-    background-color: red;
+    background-color: orange;
+    gap: 30px;
+    height: 100vh;
     padding: 0 20px;
+    .left-dashboard {
+        width: 70%;
+        background-color: rgb(252, 207, 93);
+    }
+    .right-dashboard {
+        width: 30%;
+        background-color: rgb(126, 161, 81);
+    }
+    .bottom-dashboard {
+        display: flex;
+    }
 }

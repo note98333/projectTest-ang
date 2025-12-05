@@ -14,5 +14,5 @@ import { Update } from "../../dashboard/update/update";
   styleUrl: './dashboard.css',
 })
 export class Dashboard {
-
+  
 }

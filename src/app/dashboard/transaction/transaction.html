@@ -1,1 +1,34 @@
-<p>transaction works!</p>
+<div class="transaction-con">
+    <div class="title-tran">
+        <p>Transaction</p>
+        <i-lucide [img]="Ellipsis"></i-lucide>
+    </div>
+    <div class="interview-transaction">
+   <div class="list">
+    <ng-container *ngFor="let t of dataTransaction">
+      <div class="transaction-item">
+
+        <div class="left">
+          <i [class]="t.icon" class="icon-tran"></i>
+          <div class="info">
+            <div class="name">{{ t.name }}</div>
+            <div class="date">{{t.date}}</div>
+          </div>
+        </div>
+
+
+        <div>
+            <div class="status"
+                [class.completed]="t.status === 'Completed'"
+                [class.pending]="t.status === 'Pending'" >
+                <p>{{ t.status }}</p>   
+            </div>
+            <p>{{t.code}}</p>
+        </div>
+        
+
+      </div>
+    </ng-container>
+  </div>
+    </div>
+</div>
